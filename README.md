@@ -62,7 +62,7 @@
 
 ## 시연
 
-![DEMO-002](resource/demo-002.gif)
+![DEMO-002](resource/DEMO-002.gif)
 
 ### 연관 프로젝트
 
