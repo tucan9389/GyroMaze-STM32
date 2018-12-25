@@ -27,7 +27,7 @@
 
 | Servo Motor 1                     | Servo Motor 2                                                | Light Sensor                                                 | Bluetooth Module                            | LED                                                          |
 | --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------ |
-| ![servo1](resource/servo1.jpg)[1] | ![servo2](/Users/canapio/Google Drive/18년2학기/수업관련/임베디드실험-정상화[7조]/⭐️텀프로젝트/GyroMaze-STM32/resource/servo2.jpg)[[2]](https://goo.gl/images/vFNxJ6) | [![lightsensor](/Users/canapio/Google Drive/18년2학기/수업관련/임베디드실험-정상화[7조]/⭐️텀프로젝트/GyroMaze-STM32/resource/lightsensor.jpeg)[3]](https://goo.gl/images/EHFuvN) | ![bluetooth module](resource/bluetooth.png) | ![led](/Users/canapio/Google Drive/18년2학기/수업관련/임베디드실험-정상화[7조]/⭐️텀프로젝트/GyroMaze-STM32/resource/led.png)[[4]](https://smartstore.naver.com/young-je/products/253019772) |
+| ![servo1](resource/servo1.jpg)[1] | ![servo2](resource/servo2.jpg)[[2]](https://goo.gl/images/vFNxJ6) | [![lightsensor](/resource/lightsensor.jpeg)[3]](https://goo.gl/images/EHFuvN) | ![bluetooth module](resource/bluetooth.png) | ![led](resource/led.png)[[4]](https://smartstore.naver.com/young-je/products/253019772) |
 | TSR11965                          | TF0006SER                                                    | 광센서 - 포토레지스터(찾는중..)                              | FB755AC                                     | 고휘도 LED전구 3                                             |
 
 ### 구성도
@@ -36,7 +36,7 @@
 
 ### 회로도
 
-![모듈과 브레드보드](resource/modules and breadboard.png)
+![모듈과 브레드보드](resource/modules_breadboard.png)
 
 ### 모듈별 사진
 
@@ -62,7 +62,7 @@
 
 ## 시연
 
-![demo-002](resource/demo-002.gif)
+![DEMO-002](resource/demo-002.gif)
 
 ### 연관 프로젝트
 
