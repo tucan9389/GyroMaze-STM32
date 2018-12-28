@@ -74,13 +74,9 @@
 
 ### 게임 로직
 
-####  STM32 상태 다이어그램
-
-![state_diagram_STM32](resource/state_diagram_STM32.png)
-
-#### 모바일 상태 다이어그램
-
-![state_diagram_mobile](resource/state_diagram_mobile.png)
+|                  STM32 상태 다이어그램                   |                   모바일 상태 다이어그램                   |
+| :------------------------------------------------------: | :--------------------------------------------------------: |
+| ![state_diagram_STM32](resource/state_diagram_STM32.png) | ![state_diagram_mobile](resource/state_diagram_mobile.png) |
 
 ## 미로 제작
 
