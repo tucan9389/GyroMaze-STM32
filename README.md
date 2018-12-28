@@ -27,7 +27,7 @@
 
 | Servo Motor 1                     | Servo Motor 2                                                | Light Sensor                                                 | Bluetooth Module                            | LED                                                          |
 | --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------ |
-| ![servo1](resource/servo1.jpg)[1] | ![servo2](resource/servo2.jpg)[[2]](https://goo.gl/images/vFNxJ6) | [![lightsensor](/resource/lightsensor.jpeg)[3]](https://goo.gl/images/EHFuvN) | ![bluetooth module](resource/bluetooth.png) | ![led](resource/led.png)[[4]](https://smartstore.naver.com/young-je/products/253019772) |
+| ![servo1](resource/servo1.jpg)[1] | ![servo2](resource/servo2.jpg)[[2]](https://goo.gl/images/vFNxJ6) | [![lightsensor](resource/lightsensor.jpeg)[3]](https://goo.gl/images/EHFuvN) | ![bluetooth module](resource/bluetooth.png) | ![led](resource/led.png)[[4]](https://smartstore.naver.com/young-je/products/253019772) |
 | TSR11965                          | TF0006SER                                                    | 광센서 - 포토레지스터(찾는중..)                              | FB755AC                                     | 고휘도 LED전구 3                                             |
 
 ### 구성도
