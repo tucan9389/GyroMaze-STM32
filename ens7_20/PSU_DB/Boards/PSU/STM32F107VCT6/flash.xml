@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Copyright (C) 2012-2013 ARM Limited. All rights reserved.-->
+<flash_config
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.arm.com/flash_config"
+    xsi:schemaLocation="http://www.arm.com/flash_config ../../../Schemas/flash_config.xsd">
+    <devices>
+        <!-- STM32F1xx has 2 flash sections: main flash for program code and option
+             flash for device configuration.  These are viewed as separate devices
+             when programming -->
+
+        <!-- The main flash device -->
+        <device name="MainFlash">
+            <programming_type type="FILE">
+                <!-- Use the standard method for running Keil algorithms -->
+                <method language="JYTHON" script="FDB://keil_flash.py" class="KeilFlash" method_config="Main"/>
+                <!-- Target specific script to get target in a suitable state for programming -->
+                <setup script="FDB://stm32_setup.py" method="setup"/>
+            </programming_type>
+        </device>
+
+        <!-- The option flash device -->
+        <device name="OptionFlash">
+            <programming_type type="FILE">
+                <method language="JYTHON" script="FDB://keil_flash.py" class="KeilFlash" method_config="Option"/>
+                <setup script="FDB://stm32_setup.py" method="setup"/>
+            </programming_type>
+        </device>
+    </devices>
+    <method_configs>
+        <!-- Parameters for programming the main flash -->
+        <method_config id="Main">
+            <params>
+                <!-- Programming algorithm binary to load to target -->
+                <param name="algorithm" type="string" value="FDB://algorithms/STM32F10x_CL.FLM"/>
+                <!-- The core in the target to run the algorithm -->
+                <param name="coreName" type="string" value="Cortex-M3"/>
+                <!-- RAM location & size for algorithm code and write buffers -->
+                <param name="ramAddress" type="integer" value="0x20000000"/>
+                <param name="ramSize" type="integer" value="0x10000"/>
+                <!-- Allow timeouts to be disabled -->
+                <param name="disableTimeouts" type="string" value="false"/>
+                <!-- Set to false to skip the verification stage -->
+                <param name="verify" type="string" value="true"/>
+            </params>
+        </method_config>
+
+        <!-- Parameters for programming the option flash -->
+        <method_config id="Option">
+            <params>
+                <!-- Programming algorithm binary to load to target -->
+                <param name="algorithm" type="string" value="FDB://algorithms/STM32F10x_OPT.FLM"/>
+                <!-- The core in the target to run the algorithm -->
+                <param name="coreName" type="string" value="Cortex-M3"/>
+                <!-- RAM location & size for algorithm code and write buffers -->
+                <param name="ramAddress" type="integer" value="0x20000000"/>
+                <param name="ramSize" type="integer" value="0x10000"/>
+                <!-- Allow timeouts to be disabled -->
+                <param name="disableTimeouts" type="string" value="false"/>
+                <!-- Set to false to skip the verification stage -->
+                <param name="verify" type="string" value="true"/>
+            </params>
+        </method_config>
+    </method_configs>
+</flash_config>
