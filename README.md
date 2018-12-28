@@ -46,7 +46,7 @@
 
 ### 소스파일
 
-- `gyro3.c`
+- [`gyro3.c`](ens7_20/gyro3.c)
 - `bluetooth.h`, `bluetooth.c`
 - `servo.h`, `servo.c`
 - `lightsensor.h`, `lightsensor.c`
